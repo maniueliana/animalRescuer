@@ -24,4 +24,14 @@ public class Rescuer {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
+    public void feed (Rescuer rescuer, Animal animal,FoodAnimal food)
+    {
+        System.out.println(rescuer.getName()+ " just gave some " + food.getName() + " to " + animal.getName()+ ".");
+    }
+
+    public void recreate (Rescuer rescuer, Animal animal, FreeTime activity)
+    {
+        System.out.println(rescuer.getName()+ " is " + activity.getName() + " with " + animal.getName()+ ".");
+    }
 }
